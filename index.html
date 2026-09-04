@@ -100,7 +100,35 @@
     .scarcity{max-width:520px;margin:22px auto 0;text-align:center;color:var(--gold-soft);font-size:14px;font-weight:600}
 
     .footer-note{max-width:560px;margin:30px auto 0;color:rgba(184,173,150,0.7);font-size:12px;line-height:1.55;text-align:center}
-  </style>
+      .pre-pay-note{
+      border:1px solid rgba(201,168,76,0.35);
+      border-radius:14px;
+      padding:20px 24px;
+      margin:0 auto 22px;
+      background:rgba(201,168,76,0.06);
+      max-width:520px;
+      text-align:left;
+    }
+    .pre-pay-note h3{
+      font-size:16px;
+      font-weight:700;
+      color:var(--gold-soft);
+      margin-bottom:10px;
+      line-height:1.35;
+    }
+    .pre-pay-note ol{
+      margin:0;
+      padding-left:18px;
+      color:var(--text);
+      font-size:14.5px;
+      line-height:1.7;
+    }
+    .pre-pay-note li{margin-bottom:5px;display:list-item;border:none;padding:0;gap:0}
+    @media(max-width:600px){
+      .pre-pay-note{padding:17px 19px}
+      .pre-pay-note ol{font-size:14px}
+    }
+</style>
 </head>
 <body>
   <main class="page">
@@ -140,6 +168,15 @@
     </div>
 
     <div class="cta-area">
+      <div class="pre-pay-note">
+        <h3>Prima di cliccare &mdash; 10 secondi che evitano un errore</h3>
+        <ol>
+          <li>Apri l'app della tua banca sul telefono e lasciala aperta.</li>
+          <li>Solo dopo clicca sul pulsante qui sotto.</li>
+          <li>La banca invier&agrave; una richiesta di conferma che scade in pochi secondi &mdash; approvala subito.</li>
+          <li>Non chiudere e non aggiornare questa pagina durante l'operazione.</li>
+        </ol>
+      </div>
       <button type="button" onclick="acceptUpsell('https://app.kashpay.com.br/u/7880ee6fb27ed3e8')" style="font-family: 'Poppins'; font-size: 18px; font-weight: 600; line-height: 1.3; color: #ffffff; background-color: #057932; border: none; border-radius: 10px; padding: 13px 7%; cursor: pointer; text-align: center; display: block; margin: auto;">Accetta l'Offerta</button>
       <p class="microcopy">Accesso immediato via e-mail dopo la conferma.</p>
     </div>
